@@ -22,12 +22,12 @@
   - 두 모델의 출력 텐서를 비교하여 평균 절대 오차(Mean Absolute Difference, MAE)를 계산합니다.
   - `conftest.py`에 정의된 모델별 `assert_tolerance` 값 미만일 경우 테스트가 통과(PASSED)하도록 자동 검증합니다 (`assert`).
 - **듀얼 인터페이스 (GUI & CLI):**
-  - **GUI (`verifier_gui.py`):**
+  - **GUI (`gui.py`):**
     - `tkinter` 기반의 사용자 친화적 인터페이스 제공.
     - 버튼 클릭으로 간편하게 모델 테스트 실행.
     - 테스트 진행 상태 및 `pytest` 로그 실시간 표시.
     - 최종 결과(MAE, Latency 등)를 파싱하여 보기 쉽게 표시.
-  - **CLI (`pytest test.py`):**
+  - **CLI (`pytest test.py -v -s --model <model_name>`):**
     - `pytest --model <model_name>` 명령어로 특정 모델 테스트 실행.
     - 자동화된 테스트 환경 및 스크립팅에 용이.
 - **자동 리소스 정리:**

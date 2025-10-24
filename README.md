@@ -8,9 +8,9 @@
 - **자동화된 준비/정리**: `pytest.fixture`를 사용하여 테스트 시작 시 `.pte` 파일을 생성하고, 테스트 종료 시 자동으로 삭제합니다.
 - **성능(Latency) 비교**:
   - `PyTorch` 원본 모델과 `ExecuTorch` 변환 모델의 추론 시간을 각각 50회 실행하여 측정합니다.
-  - 두 결과의 **평균(avg) 및 최대(max) Latency**를 `ms` 단위로 출력합니다.
+  - 두 결과의 평균(avg) 및 최대(max) Latency를 `ms` 단위로 출력합니다.
 - **정확도(Accuracy) 비교**:
-  - 두 모델의 출력 텐서를 비교하여 **평균 절대 오차(Mean Absolute Difference)**를 계산합니다.
+  - 두 모델의 출력 텐서를 비교하여 평균 절대 오차(Mean Absolute Difference)를 계산합니다.
 - **자동화 검증**: `assert`를 사용하여 평균 절대 오차가 `1e-5` 미만일 경우에만 테스트가 통과(`PASSED`)하도록 자동화합니다.
 
 
